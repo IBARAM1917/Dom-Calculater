@@ -5,12 +5,15 @@
 .fullset{
     display: flex;
     justify-content: center;
+
 }
 #Calculater{
     background-color: rgba(128, 128, 128, 0.175);
     box-shadow: -2px -2px 6px 1px rgba(0,0,0,1) inset;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 370px;
+    margin-top:5%;
+
 }
 #result{
     width: 89%;
