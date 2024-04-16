@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fullset">
+        <div id="Calculater">
+            <h1 id="title">First Task</h1>
+            <p id="description">Use Me</p>
+            <input id="result" readonly />
+            <div id="key">
+                <button onclick="clearDisplay()" id="clear" style="color: rgba(255, 0, 0, 0.614);"> C </button>
+                <button onclick="prevNum(`<-`)"> <- </button>
+                <button onclick="appendToDisplay(`.`)"id="dot">.</button>
+                <button onclick="appendToDisplay(`*`)"id="mul" style="color: blue;">*</button>
+                <button onclick="appendToDisplay(`7`)"id="7">7</button>
+                <button onclick="appendToDisplay(`8`)"id="8">8</button>
+                <button onclick="appendToDisplay(`9`)"id="9">9</button>
+                <button onclick="appendToDisplay(`/`)"id="div" style="color: blue;">/</button>
+                <button onclick="appendToDisplay(`4`)"id="4">4</button>
+                <button onclick="appendToDisplay(`5`)"id="5">5</button>
+                <button onclick="appendToDisplay(`6`)"id="6">6</button>
+                <button onclick="appendToDisplay(`-`)"id="subtract"style="color: blue;" >-</button>
+                <button onclick="appendToDisplay(`1`)"id="1">1</button>
+                <button onclick="appendToDisplay(`2`)"id="2">2</button>
+                <button onclick="appendToDisplay(`3`)"id="3">3</button>
+                <button onclick="appendToDisplay(`+`)"id="add" style="color: blue;" >+</button>
+                <button onclick="appendToDisplay(`0`)"id="Zero">0</button>
+                <button onclick="appendToDisplay(`00`)"id="00">00</button>
+                <button onclick="calculate()" id="equal">=</button>
+             </div> 
+        </div>
+        <div class="table-responsive">
+            <thead>
+
+            </thead>
+        </div>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
