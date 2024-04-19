@@ -1,20 +1,18 @@
-let outputScreen = document.getElementById("output-screen");
-
-function display(num){
-    outputScreen.value += num;
+const NewDisplay=document.getElementById("result")
+function appendToDisplay(input){
+    NewDisplay.value += input
 }
-function Calculate(){
+function calculate(){
     try{
-        outputScreen.value = eval(outputScreen.value)
+        NewDisplay.value=eval(NewDisplay.value)
     }
-    catch(err){
+    catch(error){
         alert("Invalid")
     }
 }
-
-function Clear(){
-    outputScreen.value = "";
+function clearDisplay(){
+    NewDisplay.value=""
 }
 function del(){
-    outputScreen.value = outputScreen.value.slice(0,-1)
+    NewDisplay.value=NewDisplay.value.slice(0,1)
 }
