@@ -1,15 +1,20 @@
-const NewDisplay=document.getElementById("result")
-function appendToDisplay(input){
-    NewDisplay.value += input
+let outputScreen = document.getElementById("output-screen");
+
+function display(num){
+    outputScreen.value += num;
 }
-function calculate(){
+function Calculate(){
     try{
-        NewDisplay.value=eval(NewDisplay.value)
+        outputScreen.value = eval(outputScreen.value)
     }
-    catch(error){
-        NewDisplay.value="Error"
+    catch(err){
+        alert("Invalid")
     }
 }
-function clearDisplay(){
-    NewDisplay.value=""
+
+function Clear(){
+    outputScreen.value = "";
+}
+function del(){
+    outputScreen.value = outputScreen.value.slice(0,-1)
 }
